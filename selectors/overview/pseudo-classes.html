@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudo classes</title>
+    <style>
+        input[type=checkbox]:checked + label {
+            color: red;
+        }
+
+        input[type=number]:valid {
+            background-color: green;
+        }
+
+        input[type=number]:invalid {
+            background-color: red;
+        }
+
+        input[type=number]:required {
+            border-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<input id="checkbox1" type="checkbox">
+<label for="checkbox1">Check and Uncheck Me</label>
+<br/>
+<input type="number" min="5" max="7" id="test3ck" required="">
+<label for="test3ck">Number between 5 and 7</label>
+</body>
+</html>
