@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Selectors</title>
+    <style>
+        li[attr] {
+            font-weight: bold;
+        }
+
+        li[attr="item2"] {
+            color: blue
+        }
+
+        li[attr|="item"] {
+            color: green;
+        }
+
+        a[title~=information]{
+            font-style: italic;
+        }
+
+        a[href$=pdf]{
+            font-style: italic;
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Attribute Selectors</h1>
+
+<ul>
+    <li attr="item1">Item 1</li>
+    <li attr="item2">Item 2</li>
+    <li attr="item-3">Item 3</li>
+    <li attr="item-4">Item 4</li>
+</ul>
+
+<a title="Do you want more information">More Infos 1</a>
+<a title="Do you want more informations">More Infos 2</a>
+
+<a href="something.pdf">PDF</a>
+<a href="something.html">HTML</a>
+
+</body>
+</html>
