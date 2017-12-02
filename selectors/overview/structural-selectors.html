@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Structural selectors</title>
+    <style>
+        tr:first-child,
+        tr:last-child {
+            font-weight: bold;
+        }
+
+        tr:first-of-type,
+        tr:last-of-type {
+            text-decoration: line-through;
+        }
+
+        tr:nth-child(even) {
+            background-color: gray;
+        }
+
+        tr:nth-child(4n) {
+            color: red;
+        }
+
+        p:first-of-type {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Structural Selectors</h1>
+
+<table>
+    <tbody>
+    <tr>
+        <td>Row 1</td>
+    </tr>
+    <tr>
+        <td>Row 2</td>
+    </tr>
+    <tr>
+        <td>Row 3</td>
+    </tr>
+    <tr>
+        <td>Row 4</td>
+    </tr>
+    <tr>
+        <td>Row 5</td>
+    </tr>
+    <tr>
+        <td>Row 6</td>
+    </tr>
+    <tr>
+        <td>Row 7</td>
+    </tr>
+    <tr>
+        <td>Row 8</td>
+    </tr>
+    <tr>
+        <td>Row 9</td>
+    </tr>
+    <tr>
+        <td>Row 10</td>
+    </tr>
+    </tbody>
+</table>
+<div>
+    <h2>Some hero facts</h2>
+    <p>Superman can fly</p>
+    <div>
+        <p>Flash can run</p>
+        <p>Badman has a nice car</p>
+    </div>
+    <div>
+        <p>Spiderman is a good jumper</p>
+    </div>
+    <p>Wonderwoman is awesome</p>
+</div>
+
+</body>
+</html>
