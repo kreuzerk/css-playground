@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltip</title>
+    <style>
+
+        a{
+            position: relative;
+        }
+
+        a:hover:before{
+            content: attr(href);
+            background-color: red;
+            padding: 15px;
+            position: absolute;
+            top: 30px;
+            left: -50px;
+        }
+
+        a:hover:after{
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-bottom-color: red;
+            left: -10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Tooltip</h1>
+
+<p>
+    Real Madrid is the best football team on earth. If you want
+    to get to know more about real madrid please visit
+    <a href="https://www.realtotal.de">Realtotal</a>. This page always
+    gives you the newest informations about Real Madrid. Also do not forget
+    to check out the <a href="https://www.realmadrid.com">the official webpage</a>
+    of Real Madrid.
+</p>
+
+</body>
+</html>
