@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <style>
+
+        .quote {
+            position: absolute;
+            left: 18%;
+            top: 40%;
+            font: bold 2.5em monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: showQuote 4s steps(43) alternate 2 forwards;
+        }
+
+        @keyframes showQuote {
+            from {
+                width: 0;
+            }
+            to {
+                width: 43ch;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div>
+    <p class="quote">With great power comes great responsibility</p>
+</div>
+</body>
+
+<script type="text/javascript">
+</script>
+
+</html>
