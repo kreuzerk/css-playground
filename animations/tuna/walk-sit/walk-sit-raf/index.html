@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIY Cat walk + sit RAF</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+    <style>
+        /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+        /* You don't need to edit the CSS, but notice how walking is the default animation and sitting now requires a class */
+        #tuna {
+            background: url(http://stash.rachelnabors.com/img/codepen/tuna_sprite.png) 0 0 no-repeat;
+            height: 200px;
+            width: 400px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: walk-cycle 1s steps(11) forwards;
+        }
+
+        #tuna.sit {
+            animation: sit-down steps(5) .5s forwards;
+        }
+
+        @keyframes walk-cycle {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 0 -2200px;
+            }
+        }
+
+        @keyframes sit-down {
+            0% {
+                background-position: -400px 0;
+            }
+            100% {
+                background-position: -400px -1000px;
+            }
+        }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+<div id="tuna"></div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script src="js/index.js"></script>
+
+</body>
+</html>
