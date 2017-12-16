@@ -1,0 +1,28 @@
+.container-fluid {
+    margin-top: 20px;
+}
+
+.info-container {
+    display: flex;
+    padding: 0;
+}
+
+.info-container div {
+    padding: 15px;
+}
+
+.info-container div:nth-child(1) {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-container i {
+    text-align: center;
+    color: white;
+}
+
+.info-container h3 {
+    margin: 0;
+}
